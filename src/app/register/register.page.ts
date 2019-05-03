@@ -7,10 +7,13 @@ import {Router} from '@angular/router'
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage  {
-  kullanıcı:string;
+  email:string;
   sifre:string;
   constructor(public home:Router) { }
   homego() {
+        //kullanıcı oluşturuluacak
+       // if(oluşturulduysa)
+
      this.home.navigate(["/home"])
   }
 
