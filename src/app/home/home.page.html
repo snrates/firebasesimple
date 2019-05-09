@@ -8,12 +8,12 @@
 <ion-content>
   <div>
     <ion-item>
-      <ion-input [(ngModel)]="mail" type="text"  placeholder="E-mail"></ion-input>
+      <ion-input [(ngModel)]="user.username" type="text"  placeholder="E-mail"></ion-input>
   </ion-item>
   <ion-item>
-      <ion-input [(ngModel)]="parola" type="password" placeholder="password"></ion-input>
+      <ion-input [(ngModel)]="user.password" type="password" placeholder="password"></ion-input>
   </ion-item>
-  <ion-button   (click)="yolla()"  expand="block"> giriş </ion-button>
+  <ion-button   (click)="yolla(user)"  expand="block"> giriş </ion-button>
   <ion-button (click)="RegisterGo()"   expand="block"> kayıt ol </ion-button>
   </div>
 </ion-content>

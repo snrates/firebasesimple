@@ -7,11 +7,11 @@
 <ion-content>
   <div>
     <ion-item>
-      <ion-input [(ngModel)]="email" type="text"  placeholder="E-mail"></ion-input>
+      <ion-input [(ngModel)]="user.username" type="text"  placeholder="E-mail"></ion-input>
   </ion-item>
   <ion-item>
-      <ion-input [(ngModel)]="sifre" type="password" placeholder="password"></ion-input>
+      <ion-input [(ngModel)]="user.password" type="password" placeholder="password"></ion-input>
   </ion-item>
-  <ion-button  (click)="homego()"  expand="block"> kayıt ol </ion-button>
+  <ion-button  (click)="homego(user)"  expand="block"> kayıt ol </ion-button>
   </div>
 </ion-content>
